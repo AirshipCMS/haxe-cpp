@@ -19,9 +19,9 @@ RUN apt-get update && \
     apt-get install -y curl build-essential libgc-dev
 
 # Download and install haxe
-RUN curl $HAXE_DOWNLOAD_URL | tar xz -C /root/ && \
+RUN curl -L $HAXE_DOWNLOAD_URL | tar xz -C /root/ && \
   mv /root/haxe* /usr/lib/haxe && \
-  curl $NEKO_DOWNLOAD_URL | tar xz -C /root && \
+  curl -L $NEKO_DOWNLOAD_URL | tar xz -C /root && \
   mv /root/neko* /usr/lib/neko && \
   ln -sf /usr/lib/haxe/haxe /usr/bin/haxe && \
   ln -sf /usr/lib/haxe/haxelib /usr/bin/haxelib && \
