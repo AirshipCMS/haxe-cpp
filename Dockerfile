@@ -4,8 +4,8 @@ MAINTAINER Jon Borgonia "jon@gomagames.com"
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV HAXE_DOWNLOAD_URL http://haxe.org/website-content/downloads/3.3.0-rc.1/downloads/haxe-3.3.0-rc.1-linux64.tar.gz
-ENV NEKO_DOWNLOAD_URL http://nekovm.org/_media/neko-2.0.0-linux64.tar.gz
+ENV HAXE_DOWNLOAD_URL https://github.com/HaxeFoundation/haxe/releases/download/3.4.2/haxe-3.4.2-linux64.tar.gz
+ENV NEKO_DOWNLOAD_URL http://nekovm.org/media/neko-2.1.0-linux64.tar.gz
 
 # Haxe environment variables
 ENV HAXE_STD_PATH /usr/lib/haxe/std/
